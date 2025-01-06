@@ -1,22 +1,9 @@
-const containers = require("./hello.js");
-const { studentRollNo, studentName } = require("./hello.js");
-const calculate = require("./function.js");
+const { username, CalculateArea, FetchAPI } = require("./example.js");
+const RGBColors = require("./example.js")
 
-var username = "Keerthivasan";
-let number = 174640;
-console.log(username);
-console.log(number);
+console.log("App is running...");
 
-let a = 100;
-let b = 200;
-calculate(a, b);
-
-console.log("containers: ", containers);
-console.log("Student Roll No: ", studentRollNo);
-console.log("Student Name: ", studentName);
-
-// You can get global object via 'global' keyword
-// console.log(window);
-// console.log(this);
-// console.log(global);
-// console.log(globalThis);
+console.log("username: ", username);
+CalculateArea();
+FetchAPI();
+console.log(RGBColors)
