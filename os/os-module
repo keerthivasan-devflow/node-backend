@@ -1,0 +1,25 @@
+os.freemem()
+os.totalmem()
+os.arch()
+os.cpus()
+os.hostname()
+os.machine()
+os.type()
+os.version()
+os.tmpdir()
+os.homedir()
+os.release()
+os.platform()
+os.endianness();
+os.networkInterfaces()
+
+os.getPriority([pid])
+os.setPriority([pid], priority)
+os.loadavg()
+os.uptime()
+os.userInfo([options])
+
+os.EOL;
+os.availableParallelism();
+os.constants;
+os.devNull;

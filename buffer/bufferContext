@@ -1,0 +1,6 @@
+new Buffer() 
+buffer.toString()
+buffer.toJSON() //returns an object
+buffer.alloc()
+buffer.from()
+buffer
