@@ -13,3 +13,4 @@
     - In a browser, when you run `console.log(this)`, you get the `window` object. However, in Node.js, you will get an empty object (`{}`). 
 
 keywords: `window, this, self, frames` returns the same window object
+Broswer Comptability: globalThis
