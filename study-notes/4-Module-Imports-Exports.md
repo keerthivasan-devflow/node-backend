@@ -1,4 +1,4 @@
-## Module Imports / Exports Using CJS / ES6
+## Module Imports / Exports Using CJS & ES6
 ### 1. Common JS Modules [CJS]
  - By default, common JS module will be enabled and used in node js
  - In node js, CJS is the prefered way to import/export the modules

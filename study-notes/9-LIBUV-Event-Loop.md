@@ -1,4 +1,4 @@
-## LIBUV / EVENT LOOP AND ITS PHASES
+## LIBUV / Event Loop and its phases
 ### Parts of LIBUV
 #### Callback Queue, Event Loop and Thread Pool
 
