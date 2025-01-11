@@ -14,18 +14,7 @@ as timers, API calls, and file reads. **This is where the event loop comes into 
 - The event loop's main responsibility is to ensure that all pending tasks in the callback queues are executed at the appropriate time and in the correct order of priority. 
 
 
-
-
-
-<!-- # PART - 4
-
-Cross-platform
-Libuv is designed to run on Linux, Windows, Mac OS X, and more, with a consistent API across all platforms. 
-
-High performance
-Libuv is designed to handle many concurrent connections and facilitate the development of scalable network applications. 
-
-Other functionalities of Libuv include: 
+<!-- Other functionalities of Libuv include: 
 TCP sockets
 DNS resolution
 UDP sockets

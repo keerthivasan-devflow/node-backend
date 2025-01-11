@@ -12,3 +12,5 @@ What is Zlib module? - To compress files/folders
 6. What is promise queue?
 7. What is micro / macro task queue?
 8. What is semi-infinite loop?
+9. What is tick in Event Loop? one cycle of event loop
+

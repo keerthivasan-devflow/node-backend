@@ -7,6 +7,8 @@ Promise.resolve().then(() => console.log("Promise resolved"));
 
 // Actually File Operation will be done on Phase 2.
 // So, to execute the available call back from fs, event loop starts execution from POLL PHASE instead of timer phase.
+// Therefore setImmediate() invoked before setTimeout().
+
 fs.readFile("file.txt", "utf8", () => {
   setTimeout(() => console.log("Timer expired - 2"));
 
