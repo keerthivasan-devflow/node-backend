@@ -11,11 +11,9 @@ In Node.js, when asynchronous code enters the call stack, it offloads those task
 ### How to change the default size of the thread pool?
 
 - The default size of the thread pool is 4, but it can be modified using the UV_THREADPOOL_SIZE environment variable and also this variable must be set before running the Node application. You can increase the size if you have many blocking operations, or decrease it if you're concerned about resource usage.
-
 - This libuv package allows us to raise the number of threads from 4 to 1024.
 
     export process.env.UV_THREADPOOL_SIZE = 6
-    node yourapp.js
 
 ### Limitations of thread pool
 
