@@ -1,6 +1,6 @@
 ## Synchronous Code Execution / Asyncrhronous Code Execution 
 
-## PART - 2
+## PART - 1
 ### What is JavaScript?
 Synchronous [Blocking I/O] / Single-threaded / Blocking
 
