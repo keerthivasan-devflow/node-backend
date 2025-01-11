@@ -1,4 +1,4 @@
-# Deep Dive into Thread Pool
+## Deep Dive into Thread Pool
 
 ### What is thread pool?
 
@@ -49,7 +49,7 @@ In Node.js, the "thread per connection" model refers to the idea of creating a n
 
 Node.js uses a single-threaded event loop to handle multiple concurrent connections. This means that, rather than creating a new thread for each connection (as you might see in traditional multithreaded server models), Node.js handles many requests asynchronously in a non-blocking manner using event-driven architecture
 
-# LEARN MORE
+### LEARN MORE
 
 - Sockets / Socket Connection
 

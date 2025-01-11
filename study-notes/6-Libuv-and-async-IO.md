@@ -1,11 +1,13 @@
-# PART - 1
+## Synchronous Code Execution / Asyncrhronous Code Execution 
+
+## PART - 2
 ### What is JavaScript?
 Synchronous [Blocking I/O] / Single-threaded / Blocking
 
 ### Synchronous (Sequential) / Asynchronous (Concurrent)
 Simple (Immediately executes) / More complex in nature (Takes time for execution)
 
-# PART - 2
+## PART - 2
 ### How synchronous code gets executed?
 - Javascript itself is a synchronous, single threaded and blocking I/O
 - will be executed as fast as possible(typically in ms)
@@ -17,7 +19,7 @@ Simple (Immediately executes) / More complex in nature (Takes time for execution
 
 **Note:** An example of synchronous code execution is provided in the `sync.js` file in the code repo.
 
-# PART - 3
+## PART - 3
 ### How asynchronous code gets executed?
 - Node.js is asynchronous primarily and fast execution due to libuv, which is a core library provided by Node.js.
 - Libuv is a built-in feature of Node.js.
