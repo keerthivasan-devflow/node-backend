@@ -1,5 +1,7 @@
 const { MongoClient } = require("mongodb");
 
+// Mandatory: Always remember to replace all the asterisks with your actual password and execute 
+// the code to work in the connection string below
 const CONNECTION_STRING_URI =
   "mongodb+srv://keerthivasan:********@nodestore.hjjeh.mongodb.net/";
 
