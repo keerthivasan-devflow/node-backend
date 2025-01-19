@@ -1,12 +1,24 @@
 ## Module Imports / Exports Using CJS & ES6
 
+**Notes:**
+1. Refer handwritten notes to know the difference between named imports/exports and default imports/exports using both
+common JS Module and ES6 Module
+
+2. Difference between Common JS Module and ES6 Module given below
+
 ## PART - 1
 ### 1. Common JS Modules [CJS]
+source: https://codedamn.com/news/javascript/require-function-in-javascript
+
  - By default, common JS module will be enabled and used in node js
  - In node js, CJS is the prefered way to import/export the modules
  - Oldest way of import/export
  - Synchronous (require() function runs your code in synchronous mode)
  - Runs on non-strict mode
+ - Isolation of Modules
+    - Each module has its own scope, meaning variables and functions defined in one module are not accessible to others unless explicitly exported.
+
+**Note: If CJS is there then why do we need ESM?** While CommonJS is synchronous and works well for server-side code, it is not as ideal for client-side (browser) code where asynchronous loading and tree-shaking (removal of unused code) are important features, which is why ES Modules are preferred for modern web development
 
 In a Node.js application, there is typically a single entry point, which is specified like this:
 `node app.js` where `app.js` is an entry point file.
@@ -16,34 +28,15 @@ When you only use the `require()` function, you cannot access variables, functio
 
 If you require() a file that doesn't explicitly export anything (using module.exports), Node.js will still run the file.
 
-### 3. To export a single parameter: module.exports = existing_nariable_name
-### Example:
-
-    var username = "kvasan1604";
-    module.exports = username;
-
-### 4. To export mutiple parameters: module.exports = { variable1, variable2...variableN }
-### Example:
-
-    var employeeId = 83729;
-    let employeeSalary = $75000;
-    let Greeting = () => console.log("Hello Keerthivasan, How are you?");
-    module.exports = { employeeId, employeeSalary, Greeting };
-
-    Therefore, While importing you can write like below:
-    const username = require("./login.js")
-    const { employeeId, employeeSalary, Greeting } = require("./greeting.js") (OR)
-    const greetingObj = require("./app.js") - This will give you the object of exported variables/functions etc.
-
 ### Advantages:
 - Avoid naming conflicts
 - Protects your variables/functions
 
 ## PART - 2
-### 5. ES6 Imports/Exports 
+### 3. ES6 Imports/Exports 
 - Newest way of import/export
-- To enable ES6 imports/exports, add the following in the package.json file: `{"type" : "module" }`
--  Asynchronous
+- To use ES6 Module - Add the following in the package.json file: `{"type" : "module" }` or `type="module"` in the script tag
+- Asynchronous
 - Runs on strict mode
 
 **Note:** If you try to `console.log(module.exports)` will return an empty object and also better way to always export and import module is using `module.exports = {}`.
