@@ -18,19 +18,20 @@
 
 ### Step 3 : Low Level Design Planning (LLD)
 **1. Database design**
-    - User Collections
-        - firstname
-        - lastname
-        - email
-        - password
-        - gender
-        - age
-    - ConnectionRequest
-        - Who is sending a connection request (fromUserId)
-        - To whom he/she is sending the connection request (toUserId)
-        - What is the status of the request (status - pending | accepted | rejected)
-        - Additional status could be: ignored
-Note: No database is flawless. So any time we can come back to design and approach the way
+ - User Collections
+    - firstname
+    - lastname
+    - email
+    - password
+    - gender
+    - age
+- ConnectionRequest
+    - Who is sending a connection request (fromUserId)
+    - To whom he/she is sending the connection request (toUserId)
+    - What is the status of the request (status - pending | accepted | rejected)
+    - Additional status could be: ignored
+
+*Please note that no database is perfect. Therefore, we can revisit the design and approach at any time.*
 
 **2. API design / contracts**
 - what are all the API's required, let's documented properly
