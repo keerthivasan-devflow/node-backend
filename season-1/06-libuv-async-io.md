@@ -4,7 +4,7 @@
 - https://codedamn.com/news/nodejs/libuv-architecture
 - https://github.com/libuv/libuv
 
-## PART - 1 JavaScript Basics
+## PART - 1
 ### What is JavaScript?
 - Synchronous [Blocking I/O] / Single-threaded / Blocking
 - Garbage Collector - which is available in V8 Engine therefore no need to take care of cleaning up memory
