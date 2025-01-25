@@ -1,4 +1,4 @@
-## Node JS Installation Set Up / REPL / app.js / globalThis
+## Node JS Installation Set Up / REPL / app.js / 'globalThis' keyword
 
 **Note:** To open REPL mode - type `node` and press `Enter` key
 

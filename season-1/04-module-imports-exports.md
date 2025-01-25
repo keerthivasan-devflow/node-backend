@@ -1,10 +1,9 @@
 ## Module Imports / Exports Using CJS & ES6
 
-**Notes:**
-1. Refer handwritten notes to know the difference between named imports/exports and default imports/exports using both
-common JS Module and ES6 Module
+**Guide:**
+1. Check the handwritten notes to understand the difference between named imports/exports and default imports/exports in both CommonJS and ES6 modules.
 
-2. Difference between Common JS Module and ES6 Module given below
+2. Below is the difference between Common JS Module and ES6 Module
 
 ## PART - 1
 ### 1. Common JS Modules [CJS]

@@ -1,6 +1,10 @@
 ## Synchronous Code Execution / Asyncrhronous Code Execution  - (Theory)
 
-## PART - 1
+**Sources:**
+- https://codedamn.com/news/nodejs/libuv-architecture
+- https://github.com/libuv/libuv
+
+## PART - 1 JavaScript Basics
 ### What is JavaScript?
 - Synchronous [Blocking I/O] / Single-threaded / Blocking
 - Garbage Collector - which is available in V8 Engine therefore no need to take care of cleaning up memory
@@ -29,7 +33,7 @@ Simple (Immediately executes) / More complex in nature (Takes time for execution
 - Refer `7-Sync-Async-Timer.md`
 
 ### Example for asynchronous code execution
-**Note:** Look into `async.js` file too.
+**Note:** Look into `sync-async.js` file too.
 
 ### Code Explanation:
 - The given code snippet includes three asynchronous operations: File Operation, Fetching data from an API, and Timer Function.
@@ -37,11 +41,9 @@ Simple (Immediately executes) / More complex in nature (Takes time for execution
 - File Operation is usually completed quickly compared to Fetching data from external resources and Timer Functions.
 - Timer values are specified in seconds, whereas JavaScript executes code in milliseconds. As a result, the Timer Function will always execute last.
 - **Finally, if `setTimeout` is given a delay of 0 or no delay is specified, what will be the order of execution?**
+  - Eventhough there is no specified delay, this is an async so it will be called only when the callstack is empty. Because the above function will be offloaded to LIBUV - This's why trust issues with setTimeout()
 
 **Note:** 
-- Since readFileSync() is a synchronous function, it will not be offloaded to LIBUV. Although synchronous code is typically executed by the V8 engine, file operations like readFileSync() cannot be executed by V8 itself because the engine does not have access to the File System (OR) Operating System. Therefore, this code is handed over to libuv for execution. During this time, the V8 engine will block the main thread. Once the file operation is completed successfully, the next line of code will execute.
+- Since readFileSync() is a synchronous function. Although synchronous code is typically executed by the V8 engine, file operations like readFileSync() cannot be executed by V8 itself because the engine does not have access to the File System (OR) Operating System. Therefore, this code is handed over to libuv for execution. During this time, the V8 engine will block the main thread. Once the file operation is completed successfully, the next line of code will execute.
 
 - Although synchronous functions are available in Node.js, it’s important to avoid using them as much as possible for better developer practices.
-
-1. **source:** https://codedamn.com/news/nodejs/libuv-architecture
-2. **source:** https://github.com/libuv/libuv

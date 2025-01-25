@@ -1,6 +1,9 @@
 ## LIBUV / Event Loop and its phases
 
+**Guide:** Refer handwritten notes for event loop phases
+
 ## PART - 1
+
 The following are the parts of LIBUV: **Callback Queue, Event Loop and Thread Pool**
 
 - When a task is offloaded to libuv , libuv internally performs several operations. For instance, if you initiate 

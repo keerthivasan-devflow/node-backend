@@ -13,4 +13,4 @@ fs.readFile("./file.txt", "utf8", (err, data) => {
   }
 });
 
-setTimeout(() => console.log("setTimeout called after 3 seconds"), 5000);
+setTimeout(() => console.log("setTimeout called after 5 seconds"), 5000);
