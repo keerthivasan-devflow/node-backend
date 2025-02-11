@@ -4,7 +4,7 @@
 
 ### Node JS Features
 - Runtime Environment
-- Event Driven Architecture (Design / Architectural Pattern) - *Refer Wikipedia for more content*
+- Event Driven Architecture (Design / Architectural Pattern)
 - Non-Blocking I/O (Asynchronous I/O)
 - Single-thread (For synchronous code execution)
 - Multi-threaded (For Asynchronous code execution)

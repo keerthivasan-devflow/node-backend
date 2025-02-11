@@ -12,6 +12,10 @@ https.get("https://jsonplaceholder.typicode.com/users/1", (data) =>
 
 fs.readFile("./file.txt", "utf8", (err, data) => console.log(data));
 
+new Promise(() => {
+  console.log("This is a simple promise");
+});
+
 setTimeout(() => console.log("setTimeout called after 5 seconds"), 5000);
 
 // Eventhough there is no specified delay, this is an async so it will be called only when the callstack is empty.
