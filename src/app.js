@@ -7,3 +7,6 @@ console.log("username: ", username);
 CalculateArea();
 FetchAPI();
 console.log(RGBColors);
+
+// console.log(window)
+console.log(this)

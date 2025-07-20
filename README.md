@@ -1,5 +1,9 @@
 # LEARN MORE ABOUT NODE JS
+- https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
+- https://nodejs.org/docs/latest/api/
 
-**Source:**
-1. https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
-2. https://nodejs.org/docs/latest/api/
+## DESIGN PATTERNS
+- Event Driven Architecture
+
+## SUPERPOWERS
+- global keyword - offers lot of features such as timer functions

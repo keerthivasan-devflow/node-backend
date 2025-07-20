@@ -1,12 +1,5 @@
-console.log("Hello Keerthivasan! - from main file");
+// Modules protectes their variables and functions from leaking
+const { greet } = require("./temp");
 
-var employeeId = 83729;
-var colors = ["red", "green", "blue"]
-
-function main(){
-    console.log("Calling main()...")
-}
-
-main()
-
-module.exports = { employeeId, colors };
+console.log("main.js file executed!");
+greet();

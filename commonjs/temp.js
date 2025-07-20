@@ -1,16 +1,10 @@
-const { employeeId, colors } = require("./main");
+console.log("temp.js file executed!");
 
-console.log("temp file");
+var a = 100;
+var b = 200;
 
-let x = 10;
-let username = "prmattap";
+function greet() {
+  console.log("Welcome Keerthivasan");
+}
 
-console.log("x : ", x);
-console.log("username : ", username);
-console.log("Employee ID (main.js) : ", employeeId)
-// employeeId = "2096938";
-// console.log(employeeId)
-
-console.log("Colors: ", colors)
-colors[0] = ["lime"]
-console.log("colors: ", colors)
+module.exports = { greet };

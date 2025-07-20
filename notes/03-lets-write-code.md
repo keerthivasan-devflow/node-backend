@@ -1,10 +1,13 @@
 ## Node JS Installation Set Up / REPL / app.js / 'globalThis' keyword
 
-**Note:** To open REPL mode - type `node` and press `Enter` key
+- When Node.js is installed, npm is automatically included. You can verify the installation by running the command `npm -v`.
 
-### Global object
-- They are provided by browsers, not the V8 engine. If you want to access web browser APIs like `setInterval` or `setTimeout`
+## Global (exist in node.js) / Window Object [part of browser not v8 engine / javascript]
+- **window, this, self, frames** - returns the window object in browsers but global returns Reference Error
+- **global** - returns window object and **this** returns `{}` in javascript environment but window returns Reference Error
+- **globalThis** - returns window object everywhere
 
-1. **window, this, self, frames** - returns the same window object in browsers
-2. **global, window** - returns window object, but **this** returns `{}` in javascript environment
-3. **globalThis** - returns window object everywhere [across all the javascript environment]
+## Questions
+- Node Version Manager vs Node Package Manager
+- How to write code in REPL mode?
+- How to execute a javascript code in Node.js? - `node filename/filepath`

@@ -1,19 +1,18 @@
 ## Synchronous Code Execution / Asyncrhronous Code Execution  - (Theory)
 
-**Sources:**
 - https://codedamn.com/news/nodejs/libuv-architecture
 - https://github.com/libuv/libuv
 
-## PART - 1
-### What is JavaScript?
+## PART 1
+## What is JavaScript?
 - Synchronous [Blocking I/O] / Single-threaded / Blocking
 - Garbage Collector - which is available in V8 Engine therefore no need to take care of cleaning up memory
 
-### Synchronous (Sequential) / Asynchronous (Concurrent)
+## Synchronous (Sequential) / Asynchronous (Concurrent)
 Simple (Immediately executes) / More complex in nature (Takes time for execution)
 
-## PART - 2
-### How synchronous code gets executed?
+## PART 2
+## How synchronous code gets executed?
 - Javascript itself is a synchronous, single threaded and blocking I/O
 - will be executed as fast as possible(typically in ms)
 - will block the main thread - [Major drwaback of sync code]
@@ -24,18 +23,18 @@ Simple (Immediately executes) / More complex in nature (Takes time for execution
 
 **Note:** An example of synchronous code execution is provided in the `sync.js` file in the code repo.
 
-## PART - 3
-### How asynchronous code gets executed?
+## PART 3
+## How asynchronous code gets executed?
 - Node.js is asynchronous primarily and fast execution due to libuv, which is a core library provided by Node.js.
 - Libuv is a built-in feature of Node.js.
 - Cross platform library, typically written in C
 - Middlelayer exist between V8 Engine and Operating System
 - Refer `7-Sync-Async-Timer.md`
 
-### Example for asynchronous code execution
+## Example for asynchronous code execution
 **Note:** Look into `sync-async.js` file too.
 
-### Code Explanation:
+## Code Explanation:
 - The given code snippet includes three asynchronous operations: File Operation, Fetching data from an API, and Timer Function.
 - These operations can be executed in a certain order, but it may vary depending on the file data. If the file data is too large, the order may change.
 - File Operation is usually completed quickly compared to Fetching data from external resources and Timer Functions.

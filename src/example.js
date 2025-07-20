@@ -1,5 +1,4 @@
 // Write few javascript code below and try to execute in REPL mode
-
 console.log("Example file is getting called!");
 
 var username = "kvasan1604";
